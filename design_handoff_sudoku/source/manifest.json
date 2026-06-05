@@ -1,0 +1,16 @@
+{
+  "name": "Sudoku",
+  "short_name": "Sudoku",
+  "description": "Offline-first Sudoku. Generate & solve — easy to very hard. No account.",
+  "start_url": "Sudoku.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f5f0",
+  "theme_color": "#f5f5f0",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

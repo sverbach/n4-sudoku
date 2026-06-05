@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+.npm
+
+# Vite
+*.local
+.vite/
+
+# .NET
+**/bin/
+**/obj/
+*.user
+.vs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
