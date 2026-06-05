@@ -1,7 +1,7 @@
-import type { DiffId } from './lib/diffs';
+import type { DifficultyId } from './lib/diffs';
 
 export interface Game {
-  difficulty: DiffId;
+  difficulty: DifficultyId;
   givenMask: boolean[];
   values: number[];
   notes: number[][];
@@ -14,6 +14,6 @@ export interface Settings {
   accent: string;
   theme: 'light' | 'dark';
   peers: boolean;
-  selStyle: 'invert' | 'ring';
-  numFont: 'martian' | 'mono';
+  selectionStyle: 'invert' | 'ring';
+  numberFont: 'martian' | 'mono';
 }

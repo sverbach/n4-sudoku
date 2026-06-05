@@ -6,7 +6,7 @@ interface Props {
 export default function ThemeToggle({ onToggle, className }: Props) {
   return (
     <button
-      className={'theme-toggle ' + (className ?? '')}
+      className={'w-11 h-11 flex items-center justify-center text-ink flex-shrink-0 hover:text-accent ' + (className ?? '')}
       onClick={onToggle}
       aria-label="Toggle light or dark"
       title="Light / dark"

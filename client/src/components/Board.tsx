@@ -1,4 +1,6 @@
-import { peersOf, DIGITS } from '../lib/utils';
+import { useMemo } from 'react';
+import { peersOf } from '../lib/utils';
+import Cell from './Cell';
 
 interface Props {
   values: number[];
@@ -7,54 +9,64 @@ interface Props {
   selected: number | null;
   conflicts: Set<number>;
   highlightPeers: boolean;
-  selStyle: 'invert' | 'ring';
+  selectionStyle: 'invert' | 'ring';
   paused: boolean;
-  onSelect: (i: number) => void;
+  onSelect: (index: number) => void;
 }
 
-export default function Board({ values, givenMask, notes, selected, conflicts, highlightPeers, selStyle, paused, onSelect }: Props) {
+export default function Board({ values, givenMask, notes, selected, conflicts, highlightPeers, selectionStyle, paused, onSelect }: Props) {
   const peers = highlightPeers ? peersOf(selected) : new Set<number>();
-  const selVal = selected != null ? values[selected] : 0;
+  const selectedValue = selected != null ? values[selected] : 0;
 
-  const cells: React.ReactNode[] = [];
-  for (let i = 0; i < 81; i++) {
-    const r = (i / 9) | 0, c = i % 9;
-    const v = values[i];
-    const given = givenMask[i];
-    const isSel = i === selected;
-    const isPeer = peers.has(i);
-    const isConflict = conflicts.has(i);
-    const sameVal = !!(selVal && v === selVal && !isSel);
-    const note = notes[i];
-
-    const cls = ['cell'];
-    if (c % 3 === 2 && c !== 8) cls.push('bx-r');
-    if (r % 3 === 2 && r !== 8) cls.push('bx-b');
-    if (isPeer) cls.push('peer');
-    if (sameVal) cls.push('same');
-    if (isConflict) cls.push('conflict');
-    if (isSel) cls.push(selStyle === 'ring' ? 'sel-ring' : 'sel-invert');
-    if (given) cls.push('given');
-
-    cells.push(
-      <div key={i} className={cls.join(' ')} onClick={() => onSelect(i)}>
-        {note.length > 0 && !v ? (
-          <div className="notes">
-            {DIGITS.map((n) => (
-              <span key={n} className={note.includes(n) ? 'on' : ''}>{n}</span>
-            ))}
-          </div>
-        ) : (
-          <span className="digit">{v || ''}</span>
-        )}
-      </div>
-    );
-  }
+  const solvedBoxes = useMemo(() => {
+    const result = new Set<number>();
+    for (let bRow = 0; bRow < 3; bRow++) {
+      for (let bCol = 0; bCol < 3; bCol++) {
+        let ok = true;
+        for (let r = 0; r < 3 && ok; r++)
+          for (let c = 0; c < 3 && ok; c++) {
+            const idx = (bRow * 3 + r) * 9 + (bCol * 3 + c);
+            if (!values[idx] || conflicts.has(idx)) ok = false;
+          }
+        if (ok) result.add(bRow * 3 + bCol);
+      }
+    }
+    return result;
+  }, [values, conflicts]);
 
   return (
-    <div className={'board' + (paused ? ' paused' : '')}>
-      <div className="board-grid">{cells}</div>
-      {paused && <div className="pause-veil">PAUSED</div>}
+    <div className="relative w-[var(--board-size)]">
+      <div className="grid grid-cols-9 grid-rows-9 aspect-square border-[3px] border-box bg-paper">
+        {Array.from({ length: 81 }, (_, index) => {
+          const row = (index / 9) | 0;
+          const col = index % 9;
+          const value = values[index];
+          const boxIndex = Math.floor(row / 3) * 3 + Math.floor(col / 3);
+          return (
+            <Cell
+              key={index}
+              row={row}
+              col={col}
+              value={value}
+              given={givenMask[index]}
+              note={notes[index]}
+              isSelected={index === selected}
+              isPeer={peers.has(index)}
+              isConflict={conflicts.has(index)}
+              isBoxSolved={solvedBoxes.has(boxIndex)}
+              sameValue={!!(selectedValue && value === selectedValue && index !== selected)}
+              selectionStyle={selectionStyle}
+              paused={paused}
+              onClick={() => onSelect(index)}
+            />
+          );
+        })}
+      </div>
+      {paused && (
+        <div className="absolute inset-0 flex items-center justify-center font-display font-extrabold text-[22px] tracking-[2px] text-ink">
+          PAUSED
+        </div>
+      )}
     </div>
   );
 }

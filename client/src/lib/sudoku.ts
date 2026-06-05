@@ -3,7 +3,7 @@
 import sudoku from './sudoku-core.js';
 
 function boardToArray(board: string): number[] {
-  return Array.from(board).map(c => c === sudoku.BLANK_CHAR ? 0 : parseInt(c, 10));
+  return Array.from(board).map(char => char === sudoku.BLANK_CHAR ? 0 : parseInt(char, 10));
 }
 
 export function generate(difficulty: string): { puzzle: number[]; solution: number[]; clues: number; difficulty: string } {
@@ -12,43 +12,43 @@ export function generate(difficulty: string): { puzzle: number[]; solution: numb
   if (!solutionStr) throw new Error('Generated puzzle has no solution');
   const puzzle = boardToArray(puzzleStr);
   const solution = boardToArray(solutionStr);
-  const clues = puzzle.filter(v => v !== 0).length;
+  const clues = puzzle.filter(value => value !== 0).length;
   return { puzzle, solution, clues, difficulty };
 }
 
 export function conflicts(values: number[]): Set<number> {
-  const bad = new Set<number>();
+  const conflictCells = new Set<number>();
   const check = (cells: number[]) => {
     const seen: Record<number, number> = {};
-    for (const i of cells) {
-      const v = values[i];
-      if (!v) continue;
-      if (seen[v] != null) { bad.add(i); bad.add(seen[v]); }
-      else seen[v] = i;
+    for (const cellIndex of cells) {
+      const value = values[cellIndex];
+      if (!value) continue;
+      if (seen[value] != null) { conflictCells.add(cellIndex); conflictCells.add(seen[value]); }
+      else seen[value] = cellIndex;
     }
   };
-  for (let r = 0; r < 9; r++) {
-    const row: number[] = [], col: number[] = [];
-    for (let k = 0; k < 9; k++) { row.push(r * 9 + k); col.push(k * 9 + r); }
-    check(row); check(col);
+  for (let row = 0; row < 9; row++) {
+    const rowCells: number[] = [], colCells: number[] = [];
+    for (let index = 0; index < 9; index++) { rowCells.push(row * 9 + index); colCells.push(index * 9 + row); }
+    check(rowCells); check(colCells);
   }
-  for (let br = 0; br < 3; br++)
-    for (let bc = 0; bc < 3; bc++) {
+  for (let boxRow = 0; boxRow < 3; boxRow++)
+    for (let boxCol = 0; boxCol < 3; boxCol++) {
       const box: number[] = [];
-      for (let i = 0; i < 3; i++)
-        for (let j = 0; j < 3; j++) box.push((br * 3 + i) * 9 + (bc * 3 + j));
+      for (let rowOffset = 0; rowOffset < 3; rowOffset++)
+        for (let colOffset = 0; colOffset < 3; colOffset++) box.push((boxRow * 3 + rowOffset) * 9 + (boxCol * 3 + colOffset));
       check(box);
     }
-  return bad;
+  return conflictCells;
 }
 
 export function isComplete(values: number[]): boolean {
-  for (let i = 0; i < 81; i++) if (!values[i]) return false;
+  for (let index = 0; index < 81; index++) if (!values[index]) return false;
   return conflicts(values).size === 0;
 }
 
 export function counts(values: number[]): number[] {
-  const c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-  for (let i = 0; i < 81; i++) if (values[i]) c[values[i]]++;
-  return c;
+  const digitCounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (let index = 0; index < 81; index++) if (values[index]) digitCounts[values[index]]++;
+  return digitCounts;
 }

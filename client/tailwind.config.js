@@ -1,8 +1,59 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: [
+    // Board.tsx — computed at runtime, scanner misses them
+    "bg-paper",
+    "bg-peers",
+    "bg-conflictbg",
+    "bg-selbg",
+    "bg-solvedbg",
+    "text-ink",
+    "text-accent",
+    "text-selink",
+    "text-note",
+    "text-transparent",
+    "font-normal",
+    "font-bold",
+    "border-r",
+    "border-r-2",
+    "border-r-line",
+    "border-r-box",
+    "border-b",
+    "border-b-2",
+    "border-b-line",
+    "border-b-box",
+    "blur-[6px]",
+    "opacity-25",
+    "shadow-[var(--same-shadow)]",
+    "shadow-[var(--ring-shadow)]",
+    "z-[1]",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bg: "var(--bg)",
+        paper: "var(--paper)",
+        ink: "var(--ink)",
+        line: "var(--line)",
+        box: "var(--box)",
+        peers: "var(--peer)",
+        faint: "var(--faint)",
+        note: "var(--note)",
+        selbg: "var(--selbg)",
+        selink: "var(--selink)",
+        conflictbg: "var(--conflictbg)",
+        solvedbg: "var(--solvedbg)",
+        accent: "var(--accent)",
+      },
+      fontFamily: {
+        mono: ["var(--mono)"],
+        display: ["var(--display)"],
+      },
+      gridTemplateRows: {
+        9: "repeat(9, minmax(0, 1fr))",
+      },
+    },
   },
   plugins: [],
-}
+};
