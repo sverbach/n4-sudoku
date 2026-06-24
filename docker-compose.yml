@@ -2,20 +2,21 @@ services:
   postgres:
     image: postgres:17-alpine
     environment:
-      POSTGRES_DB: sudoku
-      POSTGRES_USER: sudoku
-      POSTGRES_PASSWORD: sudoku
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U sudoku"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   server:
+    image: ghcr.io/sverbach/n4-sudoku-server:latest
     build:
       context: ./server
       dockerfile: Dockerfile
@@ -23,12 +24,13 @@ services:
       - "5000:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
-      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=sudoku;Username=sudoku;Password=sudoku
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}
     depends_on:
       postgres:
         condition: service_healthy
 
   client:
+    image: ghcr.io/sverbach/n4-sudoku-client:latest
     build:
       context: ./client
       dockerfile: Dockerfile
