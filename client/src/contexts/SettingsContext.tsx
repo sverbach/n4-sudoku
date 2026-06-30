@@ -11,6 +11,7 @@ const THEMES = {
     '--faint': '#8a8a82', '--note': '#8f8e86',
     '--selbg': '#0a0a0a', '--selink': '#f5f5f0',
     '--conflictbg': 'rgba(229,52,31,0.12)',
+    '--solvedbg': '#e8e7e0',
   },
   dark: {
     '--bg': '#0a0a09', '--paper': '#121210', '--ink': '#f1f0ea',
@@ -18,6 +19,7 @@ const THEMES = {
     '--faint': '#6f6e66', '--note': '#73726a',
     '--selbg': '#f1f0ea', '--selink': '#0c0c0b',
     '--conflictbg': 'rgba(229,52,31,0.20)',
+    '--solvedbg': '#1e1e1a',
   },
 } as const;
 
