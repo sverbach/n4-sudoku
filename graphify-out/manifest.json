@@ -1,0 +1,482 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1783542217.7276888,
+    "ast_hash": "a8acc4d0217acbcd4abaa7593615ad8d",
+    "semantic_hash": "a8acc4d0217acbcd4abaa7593615ad8d"
+  },
+  "client/package.json": {
+    "mtime": 1783541964.0485666,
+    "ast_hash": "966eadee89600a1c92ff8adb03e27372",
+    "semantic_hash": "966eadee89600a1c92ff8adb03e27372"
+  },
+  "client/postcss.config.js": {
+    "mtime": 1783541964.0495572,
+    "ast_hash": "5b84f4567208c7c747079c0477373231",
+    "semantic_hash": "5b84f4567208c7c747079c0477373231"
+  },
+  "client/src/App.tsx": {
+    "mtime": 1783541964.0525646,
+    "ast_hash": "bc840237e3bed26f54abee0cc9474d1e",
+    "semantic_hash": "bc840237e3bed26f54abee0cc9474d1e"
+  },
+  "client/src/components/Board.tsx": {
+    "mtime": 1783541964.054552,
+    "ast_hash": "e7266f0aaa5d5a26b57cbabf319e9650",
+    "semantic_hash": "e7266f0aaa5d5a26b57cbabf319e9650"
+  },
+  "client/src/components/Cell.tsx": {
+    "mtime": 1783541964.0555508,
+    "ast_hash": "dc103017f615ecc4949a1eaceaacf03c",
+    "semantic_hash": "dc103017f615ecc4949a1eaceaacf03c"
+  },
+  "client/src/components/GameHeader.tsx": {
+    "mtime": 1783541964.0555508,
+    "ast_hash": "1f24664a32e0b75572c3127bd7459f5e",
+    "semantic_hash": "1f24664a32e0b75572c3127bd7459f5e"
+  },
+  "client/src/components/GameNotFoundModal.tsx": {
+    "mtime": 1783541964.0575502,
+    "ast_hash": "3ed879e14977bbec32709409317c7e29",
+    "semantic_hash": "3ed879e14977bbec32709409317c7e29"
+  },
+  "client/src/components/GameScreen.tsx": {
+    "mtime": 1783541964.0585585,
+    "ast_hash": "6577bde5c4dfdd88abbc1be888350d72",
+    "semantic_hash": "6577bde5c4dfdd88abbc1be888350d72"
+  },
+  "client/src/components/GeneratingModal.tsx": {
+    "mtime": 1783541964.0585585,
+    "ast_hash": "859b00330d04c0ae93bf23c72b65c7aa",
+    "semantic_hash": "859b00330d04c0ae93bf23c72b65c7aa"
+  },
+  "client/src/components/Home.tsx": {
+    "mtime": 1783541964.0595615,
+    "ast_hash": "a8fced4ac252bf419ce68753d858ef1a",
+    "semantic_hash": "a8fced4ac252bf419ce68753d858ef1a"
+  },
+  "client/src/components/LoadShareModal.tsx": {
+    "mtime": 1783541964.0605514,
+    "ast_hash": "a1ffe07637f5c2150047ca9805c55e15",
+    "semantic_hash": "a1ffe07637f5c2150047ca9805c55e15"
+  },
+  "client/src/components/Menu.tsx": {
+    "mtime": 1783541964.0605514,
+    "ast_hash": "763ce0de5d8cd66eb085f7800c9168eb",
+    "semantic_hash": "763ce0de5d8cd66eb085f7800c9168eb"
+  },
+  "client/src/components/Numpad.tsx": {
+    "mtime": 1783541964.0615516,
+    "ast_hash": "a6b43c55cedcd0357984f9e9d29a5150",
+    "semantic_hash": "a6b43c55cedcd0357984f9e9d29a5150"
+  },
+  "client/src/components/ShareCreatedModal.tsx": {
+    "mtime": 1783541964.0615516,
+    "ast_hash": "37e4fdede8693ea76828ecf511e3e402",
+    "semantic_hash": "37e4fdede8693ea76828ecf511e3e402"
+  },
+  "client/src/components/ShareLoader.tsx": {
+    "mtime": 1783541964.0625505,
+    "ast_hash": "03ae4ed06265b5fa3c7be9cf013dd300",
+    "semantic_hash": "03ae4ed06265b5fa3c7be9cf013dd300"
+  },
+  "client/src/components/ThemeToggle.tsx": {
+    "mtime": 1783541964.0625505,
+    "ast_hash": "4fe82a78e5c4179ea01305b8fa719458",
+    "semantic_hash": "4fe82a78e5c4179ea01305b8fa719458"
+  },
+  "client/src/components/WinOverlay.tsx": {
+    "mtime": 1783541964.0635486,
+    "ast_hash": "584cb813236c7b95fce554811ed4acb4",
+    "semantic_hash": "584cb813236c7b95fce554811ed4acb4"
+  },
+  "client/src/contexts/GameContext.tsx": {
+    "mtime": 1783541964.06555,
+    "ast_hash": "274946b4d3a884f92255c68632e0d27b",
+    "semantic_hash": "274946b4d3a884f92255c68632e0d27b"
+  },
+  "client/src/contexts/SettingsContext.tsx": {
+    "mtime": 1783541964.06555,
+    "ast_hash": "7b09d496b3f65d2b4bc0f51f1720e816",
+    "semantic_hash": "7b09d496b3f65d2b4bc0f51f1720e816"
+  },
+  "client/src/lib/diffs.ts": {
+    "mtime": 1783541964.0675502,
+    "ast_hash": "a8eef16a1286827efc7a835e072464b9",
+    "semantic_hash": "a8eef16a1286827efc7a835e072464b9"
+  },
+  "client/src/lib/shareFormat.ts": {
+    "mtime": 1783541964.0675502,
+    "ast_hash": "ed0a7b9fa7fd14650559d3ba8007b8b0",
+    "semantic_hash": "ed0a7b9fa7fd14650559d3ba8007b8b0"
+  },
+  "client/src/lib/sudoku-core.d.ts": {
+    "mtime": 1783541964.0685487,
+    "ast_hash": "7d0836b3d4c06bcecb3c7b58ffef01f5",
+    "semantic_hash": "7d0836b3d4c06bcecb3c7b58ffef01f5"
+  },
+  "client/src/lib/sudoku-core.js": {
+    "mtime": 1783541964.0695481,
+    "ast_hash": "a581ce4c20f235aa1681d8d3e6904c6c",
+    "semantic_hash": "a581ce4c20f235aa1681d8d3e6904c6c"
+  },
+  "client/src/lib/sudoku.ts": {
+    "mtime": 1783541964.0705514,
+    "ast_hash": "408f2ea71f90b08d9b6346efb37bec86",
+    "semantic_hash": "408f2ea71f90b08d9b6346efb37bec86"
+  },
+  "client/src/lib/utils.ts": {
+    "mtime": 1783541964.0715504,
+    "ast_hash": "cdb35a5e1c373029dee2cf16b544f63a",
+    "semantic_hash": "cdb35a5e1c373029dee2cf16b544f63a"
+  },
+  "client/src/main.tsx": {
+    "mtime": 1783541964.072549,
+    "ast_hash": "df3369963799e47ef5a77cdca932abf0",
+    "semantic_hash": "df3369963799e47ef5a77cdca932abf0"
+  },
+  "client/src/types.ts": {
+    "mtime": 1783541964.072549,
+    "ast_hash": "c98d26863a36d2ba7525e84d7ea96c57",
+    "semantic_hash": "c98d26863a36d2ba7525e84d7ea96c57"
+  },
+  "client/src/vite-env.d.ts": {
+    "mtime": 1783541964.0735543,
+    "ast_hash": "0f66b836165705f473b4c4d019c2a781",
+    "semantic_hash": "0f66b836165705f473b4c4d019c2a781"
+  },
+  "client/tailwind.config.js": {
+    "mtime": 1783541964.0735543,
+    "ast_hash": "e8972fead09395d5c98baf8fc5fcdfda",
+    "semantic_hash": "e8972fead09395d5c98baf8fc5fcdfda"
+  },
+  "client/tsconfig.app.json": {
+    "mtime": 1783541964.074551,
+    "ast_hash": "f7a793589b4b229cae4b559b219286dc",
+    "semantic_hash": "f7a793589b4b229cae4b559b219286dc"
+  },
+  "client/tsconfig.json": {
+    "mtime": 1783541964.074551,
+    "ast_hash": "852c3a5df14a4b43ac28e9554ebedf4a",
+    "semantic_hash": "852c3a5df14a4b43ac28e9554ebedf4a"
+  },
+  "client/tsconfig.node.json": {
+    "mtime": 1783541964.0755503,
+    "ast_hash": "1a57d92c4ca85af3626ea7e667e6754f",
+    "semantic_hash": "1a57d92c4ca85af3626ea7e667e6754f"
+  },
+  "client/vite.config.ts": {
+    "mtime": 1783541964.0765512,
+    "ast_hash": "737fc6c0dcaf381beef8c9df47d37925",
+    "semantic_hash": "737fc6c0dcaf381beef8c9df47d37925"
+  },
+  "design_handoff_sudoku/source/app.jsx": {
+    "mtime": 1783541964.078547,
+    "ast_hash": "4f455c0b42df38f56a30bb395f57804b",
+    "semantic_hash": "4f455c0b42df38f56a30bb395f57804b"
+  },
+  "design_handoff_sudoku/source/components.jsx": {
+    "mtime": 1783541964.0795505,
+    "ast_hash": "a7cbd2f57d6cc6c884e915c275bdab9c",
+    "semantic_hash": "a7cbd2f57d6cc6c884e915c275bdab9c"
+  },
+  "design_handoff_sudoku/source/manifest.json": {
+    "mtime": 1783541964.083555,
+    "ast_hash": "d81d619ced4463894b8b0527c90b33b1",
+    "semantic_hash": "d81d619ced4463894b8b0527c90b33b1"
+  },
+  "design_handoff_sudoku/source/sudoku.js": {
+    "mtime": 1783541964.083555,
+    "ast_hash": "f40c60a30709a745e38ba5b238c729ec",
+    "semantic_hash": "f40c60a30709a745e38ba5b238c729ec"
+  },
+  "design_handoff_sudoku/source/sw.js": {
+    "mtime": 1783541964.0845525,
+    "ast_hash": "87ca14a184aa666acf7584d359f5a63c",
+    "semantic_hash": "87ca14a184aa666acf7584d359f5a63c"
+  },
+  "server/src/Sudoku.Api/Controllers/HealthController.cs": {
+    "mtime": 1783541964.0885441,
+    "ast_hash": "e170ce10306ab63ce129f34a8773527a",
+    "semantic_hash": "e170ce10306ab63ce129f34a8773527a"
+  },
+  "server/src/Sudoku.Api/Controllers/SharesController.cs": {
+    "mtime": 1783541964.0895476,
+    "ast_hash": "e9865ef8848870cc12ea72ece9cef300",
+    "semantic_hash": "e9865ef8848870cc12ea72ece9cef300"
+  },
+  "server/src/Sudoku.Api/Data/AppDbContext.cs": {
+    "mtime": 1783541964.0895476,
+    "ast_hash": "140aed8788ec912cc1dde737e394c4ee",
+    "semantic_hash": "140aed8788ec912cc1dde737e394c4ee"
+  },
+  "server/src/Sudoku.Api/Helpers/IdGenerator.cs": {
+    "mtime": 1783541964.0905445,
+    "ast_hash": "a50b0dcf1ddcf737964614e1bb7f5472",
+    "semantic_hash": "a50b0dcf1ddcf737964614e1bb7f5472"
+  },
+  "server/src/Sudoku.Api/Migrations/20260605090935_AddShares.Designer.cs": {
+    "mtime": 1783541964.091547,
+    "ast_hash": "c3e7cb4f3817aa294048b254c4412ed8",
+    "semantic_hash": "c3e7cb4f3817aa294048b254c4412ed8"
+  },
+  "server/src/Sudoku.Api/Migrations/20260605090935_AddShares.cs": {
+    "mtime": 1783541964.0925457,
+    "ast_hash": "7f50f09dbce9daddb0235e00ab57c4e2",
+    "semantic_hash": "7f50f09dbce9daddb0235e00ab57c4e2"
+  },
+  "server/src/Sudoku.Api/Migrations/AppDbContextModelSnapshot.cs": {
+    "mtime": 1783541964.093544,
+    "ast_hash": "459bf8ea940127130102b950b1e6ee33",
+    "semantic_hash": "459bf8ea940127130102b950b1e6ee33"
+  },
+  "server/src/Sudoku.Api/Models/Share.cs": {
+    "mtime": 1783541964.0948813,
+    "ast_hash": "3384176e501640a82f23b2ea602a7626",
+    "semantic_hash": "3384176e501640a82f23b2ea602a7626"
+  },
+  "server/src/Sudoku.Api/Program.cs": {
+    "mtime": 1783541964.095889,
+    "ast_hash": "bafbb6f2f4b1f7a9b65ec26b8723b85c",
+    "semantic_hash": "bafbb6f2f4b1f7a9b65ec26b8723b85c"
+  },
+  "server/src/Sudoku.Api/Properties/launchSettings.json": {
+    "mtime": 1783541964.095889,
+    "ast_hash": "979dc5fea16dea360e3a4e550dbaab26",
+    "semantic_hash": "979dc5fea16dea360e3a4e550dbaab26"
+  },
+  "server/src/Sudoku.Api/Sudoku.Api.csproj": {
+    "mtime": 1783541964.096887,
+    "ast_hash": "74016f9a601abbf6e80b7dac82238776",
+    "semantic_hash": "74016f9a601abbf6e80b7dac82238776"
+  },
+  "server/src/Sudoku.Api/appsettings.Development.json": {
+    "mtime": 1783541964.097893,
+    "ast_hash": "ce994516e0c0c40a1d8583ae86193e6e",
+    "semantic_hash": "ce994516e0c0c40a1d8583ae86193e6e"
+  },
+  "server/src/Sudoku.Api/appsettings.json": {
+    "mtime": 1783541964.098891,
+    "ast_hash": "963bb5efce54f6e49f249b18ffd57af9",
+    "semantic_hash": "963bb5efce54f6e49f249b18ffd57af9"
+  },
+  "sudoku.js-master/demo/assets/js/app.js": {
+    "mtime": 1783541964.111892,
+    "ast_hash": "b7050a46a3a7fc0196a60035790977fb",
+    "semantic_hash": "b7050a46a3a7fc0196a60035790977fb"
+  },
+  "sudoku.js-master/demo/assets/js/bootstrap.min.js": {
+    "mtime": 1783541964.1128874,
+    "ast_hash": "562415b628859eade00978c537ca6df6",
+    "semantic_hash": "562415b628859eade00978c537ca6df6"
+  },
+  "sudoku.js-master/demo/assets/js/html5shiv-pre3.6.js": {
+    "mtime": 1783541964.1128874,
+    "ast_hash": "1e8ba097b9e429042ffd975c92f29b68",
+    "semantic_hash": "1e8ba097b9e429042ffd975c92f29b68"
+  },
+  "sudoku.js-master/demo/assets/js/jquery.min.js": {
+    "mtime": 1783541964.1148913,
+    "ast_hash": "2b869ea9c8edd4c2243c5d44f665f632",
+    "semantic_hash": "2b869ea9c8edd4c2243c5d44f665f632"
+  },
+  "sudoku.js-master/sudoku.js": {
+    "mtime": 1783541964.117846,
+    "ast_hash": "9413074516577de1d8dc9acd4d6eb8d1",
+    "semantic_hash": "9413074516577de1d8dc9acd4d6eb8d1"
+  },
+  "sudoku.js-master/test/qunit/qunit-1.11.0.js": {
+    "mtime": 1783541964.120854,
+    "ast_hash": "f299cc0a378d789f0d245d61edef613e",
+    "semantic_hash": "f299cc0a378d789f0d245d61edef613e"
+  },
+  "sudoku.js-master/test/tests.js": {
+    "mtime": 1783541964.120854,
+    "ast_hash": "a766cde650177f898768fbd707a4c8ea",
+    "semantic_hash": "a766cde650177f898768fbd707a4c8ea"
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1783542217.7076972,
+    "ast_hash": "c232166e6492ba1ed955030b16979b05",
+    "semantic_hash": "c232166e6492ba1ed955030b16979b05"
+  },
+  ".claude/projects/-Users-sver-Projects-n4-sudoku/memory/MEMORY.md": {
+    "mtime": 1783541964.0352385,
+    "ast_hash": "83dafc5f9b1327b0300afdb2a47f92f8",
+    "semantic_hash": "83dafc5f9b1327b0300afdb2a47f92f8"
+  },
+  ".claude/projects/-Users-sver-Projects-n4-sudoku/memory/project_scaffold.md": {
+    "mtime": 1783541964.0362484,
+    "ast_hash": "3a4f761371d9b5844f573512e6229279",
+    "semantic_hash": "3a4f761371d9b5844f573512e6229279"
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1783542217.7046926,
+    "ast_hash": "60dae20a917d4f50294ef7f88470cf53",
+    "semantic_hash": "60dae20a917d4f50294ef7f88470cf53"
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1783542122.4438238,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": "d59d027fe449f06aa03905a01184e779"
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1783542122.4458268,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": "9da2a2152e60a22f07f05fed5158f287"
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1783542122.44783,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": "42fef56a01698118f7fd722acdadea34"
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1783542122.4528315,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1783542122.4608226,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1783542122.4698193,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": "3c46f8ad006874260614ed8657d02307"
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1783542122.472839,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": "67b6a5fa6c0974e18f60db9f8932fbd8"
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1783542122.480841,
+    "ast_hash": "c698309979460d0f02ba616417844399",
+    "semantic_hash": "c698309979460d0f02ba616417844399"
+  },
+  ".github/workflows/ci.yml": {
+    "mtime": 1783541964.0392482,
+    "ast_hash": "4f2625961dd820a91c9a0f7ca95657ab",
+    "semantic_hash": "4f2625961dd820a91c9a0f7ca95657ab"
+  },
+  "CLAUDE.md": {
+    "mtime": 1783542217.722696,
+    "ast_hash": "4eb80b29019b8b5b798ad66565bd8d00",
+    "semantic_hash": "4eb80b29019b8b5b798ad66565bd8d00"
+  },
+  "README.md": {
+    "mtime": 1783541964.0422451,
+    "ast_hash": "f018c9d1a71da63abd347aaa9a35679e",
+    "semantic_hash": "f018c9d1a71da63abd347aaa9a35679e"
+  },
+  "SHARING_FEATURE_PLAN.md": {
+    "mtime": 1783541964.0422451,
+    "ast_hash": "51468f67412f5786c61eaab6402fb51d",
+    "semantic_hash": "51468f67412f5786c61eaab6402fb51d"
+  },
+  "client/index.html": {
+    "mtime": 1783541964.0447567,
+    "ast_hash": "e85e6b75c3de6bd84c3b62ac64722631",
+    "semantic_hash": "e85e6b75c3de6bd84c3b62ac64722631"
+  },
+  "design_handoff_sudoku/README.md": {
+    "mtime": 1783541964.0775483,
+    "ast_hash": "8e1294a39eb100237277aff59cbd52a5",
+    "semantic_hash": "8e1294a39eb100237277aff59cbd52a5"
+  },
+  "design_handoff_sudoku/source/Sudoku.html": {
+    "mtime": 1783541964.078547,
+    "ast_hash": "1c386621776b861c5e88f24da0da6a3e",
+    "semantic_hash": "1c386621776b861c5e88f24da0da6a3e"
+  },
+  "docker-compose.yml": {
+    "mtime": 1783541964.0855486,
+    "ast_hash": "71715d3a7bef82f92ac98ef74de8907b",
+    "semantic_hash": "71715d3a7bef82f92ac98ef74de8907b"
+  },
+  "sudoku.js-master/README.md": {
+    "mtime": 1783541964.1018918,
+    "ast_hash": "1d93b8743442611205d7fda161699aa4",
+    "semantic_hash": "1d93b8743442611205d7fda161699aa4"
+  },
+  "sudoku.js-master/demo/README.md": {
+    "mtime": 1783541964.1028867,
+    "ast_hash": "c34fcfd4df7e1f6ed39b12cea325b95a",
+    "semantic_hash": "c34fcfd4df7e1f6ed39b12cea325b95a"
+  },
+  "sudoku.js-master/demo/index.html": {
+    "mtime": 1783541964.1158855,
+    "ast_hash": "2e9818ba8b7b14e64ddd17cb73b54a71",
+    "semantic_hash": "2e9818ba8b7b14e64ddd17cb73b54a71"
+  },
+  "sudoku.js-master/test/index.html": {
+    "mtime": 1783541964.1188538,
+    "ast_hash": "8c9ce7939d753675de8604914a4a4713",
+    "semantic_hash": "8c9ce7939d753675de8604914a4a4713"
+  },
+  "client/public/icons/icon-192.png": {
+    "mtime": 1783541964.0505543,
+    "ast_hash": "39b095c3242643bf60bf4d5a0fd6c641",
+    "semantic_hash": "39b095c3242643bf60bf4d5a0fd6c641"
+  },
+  "client/public/icons/icon-512.png": {
+    "mtime": 1783541964.0515637,
+    "ast_hash": "1dd380f8d6e258e0d9d3c3e47fcbea8b",
+    "semantic_hash": "1dd380f8d6e258e0d9d3c3e47fcbea8b"
+  },
+  "client/public/icons/icon-maskable-512.png": {
+    "mtime": 1783541964.0515637,
+    "ast_hash": "993029130022cc75784ec134bc40be4d",
+    "semantic_hash": "993029130022cc75784ec134bc40be4d"
+  },
+  "design_handoff_sudoku/source/icons/icon-192.png": {
+    "mtime": 1783541964.080591,
+    "ast_hash": "39b095c3242643bf60bf4d5a0fd6c641",
+    "semantic_hash": "39b095c3242643bf60bf4d5a0fd6c641"
+  },
+  "design_handoff_sudoku/source/icons/icon-512.png": {
+    "mtime": 1783541964.0815566,
+    "ast_hash": "1dd380f8d6e258e0d9d3c3e47fcbea8b",
+    "semantic_hash": "1dd380f8d6e258e0d9d3c3e47fcbea8b"
+  },
+  "design_handoff_sudoku/source/icons/icon-maskable-512.png": {
+    "mtime": 1783541964.0825527,
+    "ast_hash": "993029130022cc75784ec134bc40be4d",
+    "semantic_hash": "993029130022cc75784ec134bc40be4d"
+  },
+  "sudoku.js-master/demo/assets/ico/apple-touch-icon-114-precomposed.png": {
+    "mtime": 1783541964.106887,
+    "ast_hash": "e47d43fba984bac3939bfd108d28661f",
+    "semantic_hash": "e47d43fba984bac3939bfd108d28661f"
+  },
+  "sudoku.js-master/demo/assets/ico/apple-touch-icon-144-precomposed.png": {
+    "mtime": 1783541964.106887,
+    "ast_hash": "8b02c17a06df10d8d33af14165288066",
+    "semantic_hash": "8b02c17a06df10d8d33af14165288066"
+  },
+  "sudoku.js-master/demo/assets/ico/apple-touch-icon-57-precomposed.png": {
+    "mtime": 1783541964.1078918,
+    "ast_hash": "85c4ec1a84c43013bf75d0b51b8f96df",
+    "semantic_hash": "85c4ec1a84c43013bf75d0b51b8f96df"
+  },
+  "sudoku.js-master/demo/assets/ico/apple-touch-icon-72-precomposed.png": {
+    "mtime": 1783541964.108887,
+    "ast_hash": "d5996c183013d6b75d99de15471cc696",
+    "semantic_hash": "d5996c183013d6b75d99de15471cc696"
+  },
+  "sudoku.js-master/demo/assets/img/glyphicons-halflings-white.png": {
+    "mtime": 1783541964.109887,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "sudoku.js-master/demo/assets/img/glyphicons-halflings.png": {
+    "mtime": 1783541964.1108863,
+    "ast_hash": "2516339970d710819585f90773aebe0a",
+    "semantic_hash": "2516339970d710819585f90773aebe0a"
+  },
+  "sudoku.js-master/demo/assets/img/pacman.gif": {
+    "mtime": 1783541964.1108863,
+    "ast_hash": "437179c0b495121af68bdd64f797e02b",
+    "semantic_hash": "437179c0b495121af68bdd64f797e02b"
+  }
+}
